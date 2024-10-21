@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Buttons</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50; /* Green */
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049; /* Darker green */
+        }
+        #downloadLink {
+            display: none; /* Initially hide the download link */
+        }
+    </style>
+</head>
+<body>
+
+    <button class="button" id="geography">Geography</button>
+    <button class="button" id="history">History</button>
+    <button class="button" id="civics">Civics</button>
+
+    <a id="downloadLink" href="https://download1349.mediafire.com/rrtz8uqbrehggW4a_agJ42Jq2d8ao4bPGPnT2ldp38Y1t96UNFJB8klrp85_Rt5_w3qWwH_4l33TCDlyavVUUkHSqMS391tzDA0ibbm87lCkAKYrUVjCY_BsYXyuOCYNSZXZLWIdD6lwgUb1qFxI-EJEV-_9HnOMP5ptWJ3nNwhof_s/0999pkbnifss6ce/Ch-+8+Economic+presence+of+the+government+-1.pdf" download>
+        <button class="button">Download Chapter 8</button>
+    </a>
+
+    <script>
+        document.getElementById('civics').onclick = function() {
+            document.getElementById('downloadLink').style.display = 'block'; // Show download link
+        };
+    </script>
+
+</body>
+</html>
